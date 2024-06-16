@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -59,9 +61,96 @@
     </header>
 
     <main id="content">
-      <section id="home"></section>
+      <section id="home" class="hero">
+        <div class="container">
+          <h1 class="title">Bem-vindo à Comunidade Código Certo Coders</h1>
+          <p class="description">
+            Desenvolva habilidades técnicas na área da tecnologia com a Código
+            Certo.
+          </p>
+
+          <div id="cta-buttons">
+            <a href="#" id="openVolunteerModal" class="btn-default"
+              >Quero ser voluntário</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="home">
+        <div id="cta">
+          <div class="text-content">
+            <div class="title">
+              <h1>Aprimore os seus conhecimentos como programador conosco</h1>
+            </div>
+            <p class="paragraph_home">
+              A CodigoCerto Coders oferece a oportunidade de trabalhar com
+              produtos digitais e adquirir habilidade valiosas para a sua
+              transição de carreira.
+            </p>
+            <p class="paragraph_home">
+              Com o nosso apoio, você terá chance de desenvolver suas
+              competências e aprofundar o seu conhecimento em áreas de seu
+              interesse, aumentando assim suas chances de sucesso na sua
+              trajetória profissional.
+            </p>
+          </div>
+        </div>
+
+        <div id="banner">
+          <img
+            src="assets/images/pearson.webp"
+            alt="Pessoas trabalhando"
+            class="banner-img"
+          />
+        </div>
+      </section>
     </main>
 
+    <div id="volunteerModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h1>Formulário de Voluntariado</h1>
+        <form action="submit_form.php" method="post" id="volunteerForm">
+          <div class="form-group">
+            <label for="fullName">Digite seu nome completo</label>
+            <input type="text" id="fullName" name="fullName" required />
+          </div>
+          <div class="form-group">
+            <label for="linkedin">Informe seu LinkedIn</label>
+            <input type="url" id="linkedin" name="linkedin" required />
+          </div>
+          <div class="form-group">
+            <label for="whatsapp"
+              >Digite seu número de contato (WHATSAPP)</label
+            >
+            <input type="tel" id="whatsapp" name="whatsapp" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Digite seu e-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="role">Cargo no projeto</label>
+            <input type="text" id="role" name="role" required />
+          </div>
+          <div class="form-group">
+            <label for="terms">Termos e Condições</label>
+            <textarea id="terms" name="terms" readonly rows="6">
+              Todas as participações no CodigoCerto Coders são VOLUNTÁRIAS, não remuneradas e sem qualquer vínculo empregatício. As participações visam, unicamente, servir de experiência ao voluntário que também contribuirá com o crescimento do projeto. A CodigoCerto não garante vaga de trabalho à pessoa voluntária, embora exista a possibilidade de que receba convites para oportunidades em empresas parceiras, externas e/ou recrutadores.
+            </textarea>
+            <div class="checkbox-group">
+              <input type="checkbox" id="agree" name="agree" required />
+              <label for="agree"
+                >Eu declaro que as informações são verdadeiras e autorizo a
+                CodigoCerto a entrar em contato comigo.</label
+              >
+            </div>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
