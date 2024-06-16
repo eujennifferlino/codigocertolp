@@ -55,6 +55,10 @@ nav a:hover {
     cursor: pointer;
   }
 
+  .btn-mobile {
+    display: none;
+  }
+
   #mobile-menu.active {
     display: flex;
     flex-direction: column;

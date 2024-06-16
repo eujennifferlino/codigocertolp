@@ -33,3 +33,28 @@ section {
   background-color: #fff;
   color: #000;
 }
+
+.btn-mobile {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e53939;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-mobile:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.divider {
+  border: 0;
+  height: 2px;
+  background: #fff;
+  margin: 50px 0;
+}
